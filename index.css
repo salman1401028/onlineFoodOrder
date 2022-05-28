@@ -1,0 +1,213 @@
+.text {
+    color: white !important;
+}
+
+.button {
+    background-color: rgb(124, 124, 232);
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.card {
+    display: inline-block;
+    margin: 15px;
+    border-radius: 25px;
+
+}
+
+.price {
+    color: red;
+}
+
+.firstdiv {
+    border: 2px solid blue;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 15px;
+    background-color: rgb(166, 166, 204);
+    color: blue;
+    font-family: monospace;
+}
+
+#totalprice {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.button1 {
+    background-color: #b46161;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 25px;
+    margin-left: 400px;
+    margin-top: 7px;
+    position: relative;
+    top: -78px;
+    width: 40px;
+}
+
+
+/*VIEW CART:--*/
+.button2 {
+    background-color: #b46161;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+    top: -5px;
+    left: 132px;
+}
+
+
+#checkout {
+    background-color: #b46161;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: -8px;
+    position: relative;
+    top: -67px;
+    display: none;
+    left: -87px;
+}
+
+#paymentDiv {
+    border: 2px solid black;
+    margin: auto;
+    width: 500px;
+    height: 363px;
+    margin-top: 100px;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: #bfbff7;
+    font-family: cursive;
+    text-align: center;
+}
+
+.emptybox {
+    color: red;
+
+    width: 700px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.image {
+    margin-left: 92px;
+}
+
+#track{
+    margin: auto;
+    text-align:center;
+    border: 2px solid white;
+    width:400px;
+}
+
+
+
+
+
+
+
+/*HOME PAGE STYLES:-*/
+
+.heading {
+    font-family: 'Akronim';
+    font-size: 50px !important;
+}
+
+
+.title1 {
+    font-family: 'Akronim';
+    text-align: center;
+    font-size: 30px;
+    margin-top: 60px;
+    color: rgb(69, 4, 130);
+}
+
+.title2 {
+    font-family: 'Aclonica';
+    font-size: 22px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    color: blueviolet;
+}
+
+.headingImage {
+    margin-left: 253px;
+    width: 800px;
+}
+
+.registration-form {
+    width: 700px;
+    border: 2px solid;
+    padding: 25px;
+    margin: 10% auto;
+    border-radius: 10px;
+    display: none;
+    background-color: rgb(157, 157, 166);
+}
+
+.signupformStyle {
+    border: 2px solid black;
+    width: 700px;
+    border-radius: 15px;
+    margin-top: 50px;
+    background-color: rgb(157, 157, 166);
+    display: none;
+    padding: 40px !important;
+}
+
+.loginformStyle {
+    width: 500px;
+    border: 2px solid;
+    padding: 25px;
+    margin: 10% auto;
+    border-radius: 10px;
+    display: none;
+    background-color: rgb(157, 157, 166);
+
+
+}
+
+
+
+#signupsuccess {
+    font-family: Cursive;
+    color: green;
+    display: none;
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+
+#paymentSubmit {
+    border-radius: 10px;
+    margin: 3px 0px 0px -80px;
+    position: relative;
+    bottom: -54px;
+    right: 79px;
+}
+
+#successmessage {
+    display: none;
+    width: 700px;
+    position: relative;
+    top: -282px;
+    right: 112px;
+}
+
+
+#rejectmessage {
+    display: none;
+}

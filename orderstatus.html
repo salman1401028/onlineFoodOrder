@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Order Status</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Order Status</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Order Status Management</h1>
+		<input type="text" placeholder="Please enter Order ID" id="order-id-input">
+		<button onclick="executeOrder(() => addDoneClass(9))">EXECUTE</button>
+		<h2 id="order-id-info"></h2>
+		<div class="status-block" id="order-placed">
+			Order placed 
+		</div>
+		<div class="status-block" id="chef-received">
+			Chef received the order and started preparing
+		</div>
+		<div class="status-block" id="package-counter">
+			Package received at counter
+		</div>
+		<div class="status-block" id="package-handover">
+			The order is ready and handed over to the Zomato guy!
+		</div>
+        <div class="status-block" id="package-handover">
+			Order on the way!!
+		</div>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
+	<script>
+
+const orderIdInfo = document.getElementById('order-id-info')
+let statusBlocks = document.getElementsByClassName('status-block')
+
+const addDoneClass = (index) => statusBlocks[index].classList.add('done')
+
+const executeOrder = (callback) => {
+	const orderId = document.getElementById('order-id-input').value
+	orderIdInfo.innerText = 'Status for Order ID: ' + orderId
+	let x = 0
+	addDoneClass(x++)
+
+	setTimeout(() => {
+		addDoneClass(x++)
+
+		setTimeout(() => {
+			addDoneClass(x++)
+
+			setTimeout(() => {
+				addDoneClass(x++)
+
+				setTimeout(() => {
+					addDoneClass(x++)
+
+					setTimeout(() => {
+						addDoneClass(x++)
+						
+						setTimeout(() => {
+							addDoneClass(x++)
+
+							setTimeout(() => {
+								addDoneClass(x++)
+
+								setTimeout(() => {
+									addDoneClass(x++)
+									callback()
+								}, 2000)
+
+							}, 8000)
+
+						}, 15000)
+
+					}, 5000)
+
+				}, 12000)
+
+			}, 5000)
+
+		}, 10000)
+		
+	}, 2000)
+}
+    </script>
+</body>
+</html>
+
+
+<style>
+   body{
+	margin: 0;
+}
+
+.container {
+	text-align: center;
+	background-color: #0097ff0f;
+	height: 100vh;
+	padding-bottom: 50px;
+}
+
+h1{
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 72%, rgba(0,151,255,1) 96%);
+	color: white;
+	margin: 0;
+	padding: 20px;
+}
+
+h2 {
+	font-family: monospace;
+}
+
+input {
+	padding: 10px 20px;
+	width: 500px;
+	margin-top: 20px;
+	border-radius: 20px;
+	font-size: 1.5em;
+	border-color: rgba(9,9,121,1);
+}
+
+input::-webkit-input-placeholder {
+	text-align: center;
+}
+
+button {
+	border: none;
+	display: block;
+	margin: 10px auto;
+	padding: 10px 15px;
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 72%, rgba(0,151,255,1) 96%);
+	color: white;
+	border-radius: 10px;
+	font-size: 1em;
+	padding: 10px 20px;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+div.status-block{
+	border: 1px solid black;
+	padding: 15px 0;
+	margin: 10px auto;
+	width: 500px;
+	border-radius: 40px;
+	font-size: 1.2em;
+}
+
+.done{
+	background-color: green;
+	color: white;
+}
+</style>
