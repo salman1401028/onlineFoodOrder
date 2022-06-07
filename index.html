@@ -16,7 +16,7 @@
     <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
 </head>
 
-<body style="background-color:rgb(175, 175, 212)">
+<body id="bodyimage">
     <!--NAVBAR*********************************-->
 
     <div class="container">
@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text" aria-current="page" href="home.html">Home</a>
+                            <a id="home" class="nav-link active text" aria-current="page" href="index.html">Home</a>
                         </li>
                     </ul>
                     <button class="button" onclick="login()">Login</button>
@@ -45,8 +45,7 @@
             <h1 class="title1">Hi there! Thank you for visiting our website, we have crafted it beautifully and usable
                 for our users to access it efficiently.</h1>
             <h1 class="title2">Signup if you are new cutomer or Login if you are an existing customer.</h1>
-            <img class="headingImage"
-                src="https://images.all-free-download.com/images/graphiclarge/restaurant_menu_cover_template_classical_decoration_6833861.jpg">
+            
         </div>
 
     </div>
@@ -59,7 +58,7 @@
     
     <div class="container registration-form" id="signupId">
         <div >
-            <h6 class="display-6 mb-3" style="text-align:center"><u><b>Signup Below:-</b></u></h6>
+            <h6 class="display-6 mb-3" style="text-align:center; font-family:Aclonica "><u><b>Signup Below:-</b></u></h6>
             <form class="row g-3 needs-validation" novalidate>
                 <!--we can add attribute autocomplete="off", if we do not want suggestions in input field.-->
                 <div class="col-md-4">
@@ -188,8 +187,8 @@
         </div>
     </div>
 
-    <div>
-        <h1 id="signupsuccess">You have successfully Signedup.Click <a href="#" onclick="login()">here</a> for login.</h1>
+    <div id="signupsuccess">
+        <h1 >You have successfully Signedup.Click <a href="#" onclick="login()">here</a> for login.</h1>
     </div>
 
 
@@ -198,7 +197,7 @@
 <!--******************************LOGIN-FORM**********************-->
 
 <div class="container loginformStyle" id="loginId"><!--ID'S FOR HIDING AND SHOWING DIV-->
-    <h3 style="text-align:center; color:rgb(116, 116, 229)"><u style="color:black;">Login below:-</u></h3>
+    <h3 style="text-align:center; color:rgb(116, 116, 229); font-family: 'Aclonica' !important;" class="display-6 mb-3" ><u style="color:black;">Login below:-</u></h3>
     <form class="row g-3 needs-validation" novalidate>
 
         <div>
@@ -208,7 +207,7 @@
 
         <div>
             <label for="validationCustom01" class="form-label"><b>Enter Your Password:-</b></label>
-            <input type="text" class="form-control" id="passwordauthentication" required>
+            <input type="password" class="form-control" id="passwordauthentication" required>
         </div>
         
         <div>

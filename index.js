@@ -1,5 +1,7 @@
 
 
+//*************************MENU PAGE LOGICS: ***********************************/
+
 
 
 let parentDiv = document.getElementById('parentDiv');
@@ -16,7 +18,7 @@ function reset(){
 
 
 
-function addtocart(foodname, pricee) {
+function addtocart(foodname, pricee) {  //NEXT:-- viewcart()
 
 
     totalpricee = totalpricee + pricee;
@@ -24,8 +26,8 @@ function addtocart(foodname, pricee) {
     alert('item successfully added to cart.');
     parentDiv.style.display = 'none';
 
-    document.getElementById('cart').style.display = 'block';
-    document.getElementById('totalprice').style.display = 'block';
+
+
     //CREATING ELEMENT:-
     let firstdiv = document.createElement('div');
     let foodName = document.createElement('h5');
@@ -63,23 +65,18 @@ function addtocart(foodname, pricee) {
 
     removeitem.addEventListener('click', () => {//********************************************** */
         firstdiv.style.display = 'none';
-        totalpricee = totalpricee - document.getElementById('vn').innerText;
+        totalpricee = totalpricee - pricee;
         document.getElementById('totalprice').innerText = (`Total Price:-Rs. ${totalpricee}/-`);
     })
 }
 
- function proceedcheckout(){
-     document.getElementById('parentDiv').style.display='none';
-     document.getElementById('paymentDiv').style.display='block';
 
-     
-     
-
- }
-
-function viewcart() {
+function viewcart() {  //NEXT:- proceedcheckout() or resetCart()
     let container1 = document.getElementById('container1');
 
+
+    document.getElementById('cart').style.display = 'block';
+    document.getElementById('totalprice').style.display = 'block';
     //console.log(totalpricee);
     document.getElementById('totalprice').innerText = (`Total Price:-Rs. ${totalpricee}/-`);
     container1.style.display = 'none';
@@ -89,21 +86,28 @@ function viewcart() {
 
 }
 
+//****************************************************** */
+ function proceedcheckout(){  //NEXT:--paymentProcess()
+     document.getElementById('parentDiv').style.display='none';
+     document.getElementById('paymentDiv').style.display='block';
 
-function resetCart() {
+}
+
+
+function resetCart() {  //NEXT:--openmenu() 
 
     document.getElementById('parentDiv').style.display = 'none';
     document.getElementById('emptyCartMessage').style.display = 'block';
 
 }
+//********************************************************** */
 
-
-function openmenu(){
+function openmenu(){//OPENS MENU AGAIN
    window.location= 'menu.html';
 }
 
 
-function paymentProcess(){
+function paymentProcess(){//FINAL
 
     
 
@@ -122,15 +126,15 @@ function paymentProcess(){
 
     if((gpay.length > 0 && phonepe.length==0) || (phonepe.length > 0 && gpay.length==0))
     {
-        document.getElementById('paymentDiv').style.display='block';
-        document.getElementById('successmessage').style.display='block';
+        //document.getElementById('paymentDiv').style.display='block';
+        document.getElementById('processmessage').style.display='block';
         document.getElementById('rejectmessage').style.display='none';
         const myTimeout = setTimeout(orderProcessed, 5000);
 
         function orderProcessed() {
-            document.getElementById('track').style.display='block';
+            document.getElementById('successmessage').style.display='block';
             document.getElementById('paymentDiv').style.display='none';
-            document.getElementById('successmessage').style.display='none';
+            document.getElementById('processmessage').style.display='none';
             document.getElementById('rejectmessage').style.display='none';
             
         }
@@ -166,6 +170,7 @@ function login() {
     document.getElementById('decoration').style.display = 'none';
     document.getElementById('signupId').style.display = 'none';
     document.getElementById('signupsuccess').style.display = 'none';
+    //document.getElementById('home').href = 'index.html';
 }
 
 

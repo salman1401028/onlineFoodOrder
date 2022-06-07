@@ -104,11 +104,12 @@
     margin-left: 92px;
 }
 
-#track{
+#successmessage{
     margin: auto;
-    text-align:center;
+    text-align: center;
     border: 2px solid white;
-    width:400px;
+    width: 602px;
+    padding: 50px;
 }
 
 
@@ -118,7 +119,13 @@
 
 
 /*HOME PAGE STYLES:-*/
-
+#bodyimage{
+    height: 800px;
+    background-image: url('https://images.unsplash.com/photo-1458253756247-1e4ed949191b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGZvb2QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    
+}
 .heading {
     font-family: 'Akronim';
     font-size: 50px !important;
@@ -129,8 +136,10 @@
     font-family: 'Akronim';
     text-align: center;
     font-size: 30px;
-    margin-top: 60px;
-    color: rgb(69, 4, 130);
+    margin-top: 180px;
+    color: rgb(207, 189, 224);
+    background-color: rgb(3, 3, 155);
+    opacity:60%;
 }
 
 .title2 {
@@ -139,7 +148,9 @@
     text-align: center;
     margin-top: 60px;
     margin-bottom: 50px;
-    color: blueviolet;
+    color: rgb(182, 151, 211);
+    background-color: rgb(3, 3, 155);
+    opacity:60%;
 }
 
 .headingImage {
@@ -154,18 +165,13 @@
     margin: 10% auto;
     border-radius: 10px;
     display: none;
-    background-color: rgb(157, 157, 166);
+    font-family:Helvetica;
+    background-color: rgb(93 93 233);
+    font-size:25px;
+    opacity:75%;
 }
 
-.signupformStyle {
-    border: 2px solid black;
-    width: 700px;
-    border-radius: 15px;
-    margin-top: 50px;
-    background-color: rgb(157, 157, 166);
-    display: none;
-    padding: 40px !important;
-}
+
 
 .loginformStyle {
     width: 500px;
@@ -175,7 +181,10 @@
     border-radius: 10px;
     display: none;
     background-color: rgb(157, 157, 166);
-
+    background-color: rgb(93 93 233);
+    font-family:Helvetica;
+    font-size:25px;
+    opacity:75%;
 
 }
 
@@ -184,9 +193,14 @@
 #signupsuccess {
     font-family: Cursive;
     color: green;
+    background-color: white;
     display: none;
     text-align: center;
-    margin-top: 150px;
+    margin:auto;
+    margin-top: 192px;
+    width:700px;
+    opacity:80%;
+    
 }
 
 
@@ -199,7 +213,7 @@
     right: 79px;
 }
 
-#successmessage {
+#processmessage {
     display: none;
     width: 700px;
     position: relative;
@@ -211,3 +225,17 @@
 #rejectmessage {
     display: none;
 }
+
+
+/*
+.signupformStyle {
+    border: 2px solid black;
+    width: 700px;
+    border-radius: 15px;
+    margin-top: 50px;
+    display: none;
+    padding: 40px !important;
+    background-color: rgb(93 93 233);
+    opacity:75%;
+}
+*/

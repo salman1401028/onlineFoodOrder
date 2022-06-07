@@ -16,7 +16,7 @@
     <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
 </head>
 
-<body>
+<body style="background-color:rgb(122, 110, 110)">
     <!---->
 
     <!--NAVBAR*********************************-->
@@ -45,14 +45,14 @@
 
     </div>
 
-    <!--CARDS*********************************-->
+    <!--FOOD ITEM CARDS*********************************-->
 
     <div class="container" id="container1">
         <div class="card" style="width: 18rem;">
             <img src="assets\Shrimp-Chow-Mein-One-Pot-Meal-30-minute-2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title" id="foodName">Veg Noodles</h5>
-                <h5 class="price" id="vn">270</h5>
+                <h5 class="price" id="vn">Price: 270/-</h5>
                 <p class="card-text">In American Chinese cuisine, it is a stir-fried dish consisting of noodles, cabbage
                     onions and celery.</p>
                 <a class="btn btn-primary" onclick="addtocart('Veg Noodles', 270)">Add to cart</a>
@@ -159,10 +159,11 @@
             <h4 id="totalprice" style="display:none">Total Price:-</h4>
 
         </div>
+    <div>
 
 
 <!--PAYMENT METHOD SELECTION:--->
-
+    <div>
         <div id="paymentDiv" style="display:none">
             <h3 style="margin-bottom:30px">Please select payment method:-</h3>
             <h4>Enter your gpay UPI id:-</h4>
@@ -172,16 +173,16 @@
             <input style="border-radius: 10px; position: relative; top: -3px;" type="text" id="phonepeid">
 
             <button id="paymentSubmit" onclick="paymentProcess()">Submit</button>
-            <img id="successmessage" src="https://thumbs.gfycat.com/AcclaimedPositiveGull-size_restricted.gif">
+            <img id="processmessage" style="display:none;" src="https://thumbs.gfycat.com/AcclaimedPositiveGull-size_restricted.gif">
             <p style="display:none; color:red" id="rejectmessage">**Please select either of the one payment method to proceed.</p>
         </div>
 
 
-        <div id="track" style="display:none">
+        <div id="successmessage" style="display:none">
             
             <img style="border-radius: 15px" src="https://thumbs.gfycat.com/TemptingOptimalFairybluebird-max-1mb.gif">
-            <h2 style="font-family: cursive; margin: 30px 0 0 103px;">Order placed successfully, you can track your order by clicking on the button below.</h2>
-            <button style="margin: 20px 0 0 113px" class="button" onclick="executeOrder(() => addDoneClass(9))">Track</button>
+            <h2 style="font-family: cursive; margin: 30px 0 0 103px;margin: auto;">Order placed successfully, you can track your order by clicking on the button below.</h2>
+            <button style="margin: 20px 0 0 113px; margin: auto; margin-top:66px" class="button" onclick="executeOrder(() => addDoneClass(9))">Track</button>
         </div>
     </div>
 
